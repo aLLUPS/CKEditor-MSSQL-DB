@@ -4,5 +4,30 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <br />
+    <br />
+    <h4 class="upload-file-link text-center ">
+        <a asp-controller="Article" asp-action="WriteArticle">Go to Editor</a>
+    </h4>
 </div>
+
+<style>
+    .upload-file-link {
+        margin-top: 100px;
+    }
+
+    .upload-file-link a {
+        border-radius: 5px;
+        background-color: rebeccapurple;
+        color: white;
+        padding: 5px 10px;
+        width: 300px;
+        text-decoration: none;
+    }
+
+    .upload-file-link a:hover {
+        text-decoration: none;
+        background-color: grey;
+        color: white;
+    }
+</style>
