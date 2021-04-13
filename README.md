@@ -4,6 +4,7 @@
 - To download the ckeditor: https://ckeditor.com/ckeditor-4/download/
 
 <br/>
+
 ![](Preview/CKEditor.gif)
 
 <br/>
