@@ -1,0 +1,118 @@
+﻿@model IEnumerable<UserArticle>
+@{
+    ViewData["Title"] = "All Articles";
+}
+
+<div class="container-fluid">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-8">
+            <div class="card" style="padding-top:50px">
+                <div>
+                    @foreach (var article in Model)
+                    {
+                        <div class="card">
+                            <div>
+                                @*<a asp-controller="NavBlog" asp-action="PostView" asp-route-id="@article.Id">
+                                        @article.Id
+                                    </a>*@
+                                <a asp-controller="Article" asp-action="SingleArticle" asp-route-id="@article.ArticleId">
+                                    <h3>
+                                        @article.ArticleTitle
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <a button type="button" class="btn btn-outline-primary" asp-controller="Article" asp-action="WriteArticle" asp-route-id="@article.ArticleId">
+                                        Edit Article
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a button type="button" class="btn btn-outline-primary" asp-controller="Article" asp-action="RemoveArticle" asp-route-id="@article.ArticleId">
+                                        Delete Article
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                       <hr />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <style>
+        @@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+        body {
+            background-color: #eee;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300
+        }
+
+        .card {
+            border: none
+        }
+
+        .ellipsis {
+            color: #a09c9c
+        }
+
+        hr {
+            color: #a09c9c;
+            margin-top: 4px;
+            margin-bottom: 8px
+        }
+
+        .muted-color {
+            color: #a09c9c;
+            font-size: 13px
+        }
+
+        .ellipsis i {
+            margin-top: 3px;
+            cursor: pointer
+        }
+
+        .icons i {
+            font-size: 25px
+        }
+
+        .icons .fa-heart {
+            color: red
+        }
+
+        .icons .fa-smile-o {
+            color: yellow;
+            font-size: 29px
+        }
+
+        .rounded-image {
+            border-radius: 50% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px
+        }
+
+        .form-control {
+            border-radius: 26px
+        }
+
+        .fonts {
+            position: absolute;
+            right: 13px;
+            top: 8px;
+            color: #a09c9c
+        }
+
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #8bbafe;
+            outline: 0;
+            box-shadow: none
+        }
+    </style>
