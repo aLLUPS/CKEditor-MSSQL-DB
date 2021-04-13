@@ -1,8 +1,12 @@
 # CKEditor-MSQL-DB
 
-It is recommend to read the following medium article before using the project:\
-To download the ckeditor: https://ckeditor.com/ckeditor-4/download/
+- It is recommend to read the following medium article before using the project:\
+- To download the ckeditor: https://ckeditor.com/ckeditor-4/download/
+
+<br/>
 ![](Preview/CKEditor.gif)
+
+<br/>
 
 *After cloning(downloading) the project, please make the following changes the relavent files:*
 
@@ -10,7 +14,6 @@ To download the ckeditor: https://ckeditor.com/ckeditor-4/download/
 
     Insert the connection string to your Microsoft SQL database replacing 'ConectionStringToSQLDB' at line 3. This is the connection string with the name 'DefaultConnectioin'. (do not delete the double quotes)
     
-    <br/>
     <br/>
     
 **Then try the following command in NuGet Package Manger Console:**
