@@ -2,6 +2,7 @@
 
 It is recommend to read the following medium article before using the project:\
 To download the ckeditor: https://ckeditor.com/ckeditor-4/download/
+![](Preview/CKEditor.gif)
 
 *After cloning(downloading) the project, please make the following changes the relavent files:*
 
